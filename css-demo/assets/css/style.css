@@ -1,0 +1,338 @@
+/* ---- Modern CSS Redesign ---- */
+
+/* --------------- Box Sizing ---------------- */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* -------------- Utility Classes ---------------- */
+.container {
+  width: 85vw;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.img-right {
+  float: right;
+  margin: 15px 0 15px 25px;
+  border: 3px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.img-left {
+  float: left;
+  margin: 15px 25px 15px 0;
+  border: 3px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.img-center {
+  display: block;
+  margin: 25px auto;
+  border: 3px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* -------------- Responsive Images ---------------- */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* ---------------- Global Styles ------------------ */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9fb;
+  margin: 0;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* ---------------- Header ------------------ */
+header.primary {
+  background: linear-gradient(135deg, #243b55, #141e30);
+  text-align: center;
+  color: #ffffff;
+  text-shadow: none;
+  padding: 50px 20px;
+  border-bottom: 4px solid #00c9a7;
+}
+
+header.primary h1 {
+  font-size: 2.6rem;
+  margin: 10px 0;
+}
+
+header.primary h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header.primary h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #cfd8dc;
+  margin: 10px 0 0 0;
+  letter-spacing: 1px;
+}
+
+header.primary nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0 0 0;
+}
+
+header.primary nav ul li {
+  list-style-type: none;
+}
+
+header.primary nav ul a {
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 25px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+header.primary nav a:hover {
+  background: #00c9a7;
+  color: #fff;
+}
+
+/* ---------------- Intro Section ------------------ */
+#intro h2 {
+  color: #243b55;
+  border-bottom: 2px solid #00c9a7;
+  padding-bottom: 5px;
+}
+
+/* ---------------- Content Section ------------------ */
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 50px 0;
+  margin: 40px auto;
+}
+
+#content .post {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+#content .post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#content .post figure {
+  margin: 0 0 10px 0;
+}
+
+#content time.post-date,
+#content figcaption {
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  color: #888;
+}
+
+#content a {
+  color: #00a896;
+  transition: 0.3s;
+}
+
+#content a:hover {
+  text-decoration: none;
+  color: #00796b;
+}
+
+/* ---------------- Practice Section ------------------ */
+#practice h2 {
+  color: #243b55;
+  border-bottom: 2px solid #00c9a7;
+  padding-bottom: 5px;
+}
+
+#practice h3 {
+  border-left: 6px solid #00c9a7;
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  color: #141e30;
+}
+
+#practice a {
+  color: #00a896;
+}
+
+#practice a:hover {
+  text-decoration: none;
+  color: #00796b;
+}
+
+#practice table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: #fff;
+}
+
+#practice caption {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 15px 0;
+  color: #141e30;
+}
+
+#practice tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+#practice tr:hover {
+  background-color: #e0f7fa;
+}
+
+#practice th {
+  background-color: #243b55;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+#practice td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+#practice ol {
+  list-style-type: lower-roman;
+}
+
+#practice ul ul {
+  color: #00c9a7;
+}
+
+#practice dt {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#practice dd {
+  margin-left: 10px;
+}
+
+#practice blockquote {
+  border-left: 6px solid #00c9a7;
+  background-color: #141e30;
+  color: #fff;
+  padding: 30px 40px;
+  margin: 40px 0;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+#practice blockquote cite {
+  display: block;
+  font-size: 0.8rem;
+  text-align: right;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+/* ---------------- Aside ------------------ */
+aside[role="complementary"] {
+  background-color: #141e30;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+aside .container a {
+  color: #00c9a7;
+  transition: 0.3s;
+}
+
+aside .container a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+aside .container a:last-child {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+}
+
+aside .widget footer {
+  display: none;
+}
+
+/* ---------------- Footer ------------------ */
+#colophon {
+  background-color: #00c9a7;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #141e30;
+  letter-spacing: 0.5px;
+}
+
+/* ---------------- Media Queries ------------------ */
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  header.primary nav ul a {
+    display: block;
+  }
+
+  #content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  #practice blockquote {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  aside .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
